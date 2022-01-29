@@ -10,13 +10,13 @@ export const checkIsValidPhoneNumber = () => {
 
 	if (!isValidPhone()) {
 		toggleErrorClass("add", inputPhone, descriptionPhone);
-		addTextContentToDomElements(descriptionPhone, "The phone number must have 9 numbers");
+		addTextContentToDomElements(descriptionPhone, "Numer Telefonu musi miec 9 liczb");
 
 		return false;
 	}
 
 	toggleErrorClass("remove", inputPhone, descriptionPhone);
-	addTextContentToDomElements(descriptionPhone, "Phone number is valid");
+	addTextContentToDomElements(descriptionPhone, "Numer telefonu jest poprawny");
 
 	return true;
 };

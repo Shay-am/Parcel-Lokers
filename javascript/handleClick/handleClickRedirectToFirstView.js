@@ -5,7 +5,7 @@ import { resetInputs } from "../helpers/resetValueInput.js";
 
 export const handleClickRedirectToFirstView = () => {
 	renderToFirstView();
-	addTextContentToDomElements(descriptionCode, "Code Package must have 4 numbers");
-	addTextContentToDomElements(descriptionPhone, "The phone number must have 9 numbers");
+	addTextContentToDomElements(descriptionCode, "Kod paczki musi mieć 4 liczby");
+	addTextContentToDomElements(descriptionPhone, "Numer telefonu musi mieć 9 liczb");
 	resetInputs();
 };
