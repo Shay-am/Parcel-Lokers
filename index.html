@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Parcel lockers</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="body">
+		<div class="wrapper">
+			<div class="container">
+				<header class="header">
+					<h1 class="header--heading">Envelo</h1>
+					<span class="header--description"
+						>Możesz mieć swoją przesyłke w kilkanaście sekund.
+					</span>
+					<span class="header--description">Rozpocznij klikając w przycisk.</span>
+				</header>
+				<main class="main">
+					<div class="inputs-wrapper hidden">
+						<div class="input-container">
+							<label class="label" for="phone-number">Numer telefonu</label>
+							<input
+								class="input phone"
+								type="number"
+								id="phone-number"
+								name="phone-number"
+								placeholder="Phone number..."
+								required
+							/>
+							<div class="description-container">
+								<span class="description-phone error-code">Phone number is required</span>
+							</div>
+						</div>
+						<div class="input-container">
+							<label class="label" for="code-package">Kod Odbioru</label>
+							<input
+								class="input code"
+								type="number"
+								id="code-package"
+								name="code-package"
+								placeholder="Code package..."
+								min="4"
+								max="4"
+								required
+							/>
+							<div class="description-container">
+								<span class="description-code error-code">Code Package is required</span>
+							</div>
+						</div>
+					</div>
+					<div class="description-container">
+						<span class="description-error-send error-code hidden"
+							>It went something wrong. Try again</span
+						>
+					</div>
+					<div class="loader-btn">
+						<div class="loader hide-loader" id="loader"></div>
+						<button class="btn">Odbierz paczkę</button>
+					</div>
+				</main>
+			</div>
+			<div class="modal-wrapper">
+				<section class="modal-container">
+					<header class="header-modal">
+						<h2>Paczka Odebrana</h2>
+					</header>
+					<span class="header--description">Zrobiłeś to w czasie 10 sekund.</span>
+					<span class="header--description">Czy możemy zrobić dla Ciebie coś jeszcze?.</span>
+					<div class="buttons-container">
+						<button class="btn btn-modal reset">To wszystko na dziś.</button>
+						<button class="btn btn-modal next">Odbierz kolejną Paczkę</button>
+					</div>
+				</section>
+			</div>
+		</div>
+		<script type="module" src="./javascript/index.js"></script>
+	</body>
+</html>
