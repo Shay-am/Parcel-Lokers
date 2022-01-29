@@ -10,13 +10,13 @@ export const checkIsValidCodePackage = () => {
 
 	if (!isValidCode()) {
 		toggleErrorClass("add", inputCode, descriptionCode);
-		addTextContentToDomElements(descriptionCode, "Kod paczki musi mieć 4 liczby");
+		addTextContentToDomElements(descriptionCode, "Kod odbioru musi mieć 4 liczby");
 
 		return false;
 	}
 
 	toggleErrorClass("remove", inputCode, descriptionCode);
-	addTextContentToDomElements(descriptionCode, "Kod paczki jest poprawny");
+	addTextContentToDomElements(descriptionCode, "Kod odbioru jest poprawny");
 
 	return true;
 };

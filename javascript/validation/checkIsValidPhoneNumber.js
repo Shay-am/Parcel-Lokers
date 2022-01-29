@@ -10,7 +10,7 @@ export const checkIsValidPhoneNumber = () => {
 
 	if (!isValidPhone()) {
 		toggleErrorClass("add", inputPhone, descriptionPhone);
-		addTextContentToDomElements(descriptionPhone, "Numer Telefonu musi miec 9 liczb");
+		addTextContentToDomElements(descriptionPhone, "Numer telefonu musi miec 9 liczb");
 
 		return false;
 	}
