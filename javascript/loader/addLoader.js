@@ -3,7 +3,6 @@ import { checkIsValidInputs } from "../validation/checkIsValidInputs.js";
 import { handleErrorPromise } from "../helpers/handleErrorPromise.js";
 
 const promiseLoader = () => {
-	changeButtonType("loader");
 	return new Promise((resolve, reject) => {
 		setTimeout(() => {
 			resolve("Succes");
@@ -12,6 +11,7 @@ const promiseLoader = () => {
 };
 
 export const addLoader = async callback => {
+	changeButtonType("loader");
 	try {
 		const result = await promiseLoader();
 

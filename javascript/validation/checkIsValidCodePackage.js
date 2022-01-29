@@ -10,7 +10,6 @@ export const checkIsValidCodePackage = () => {
 
 	if (!isValidCode()) {
 		toggleErrorClass("add", inputCode, descriptionCode);
-
 		addTextContentToDomElements(descriptionCode, "Code Package must have 4 numbers");
 
 		return false;
