@@ -2,14 +2,14 @@ import { changeButtonType } from "./changeButtonType.js";
 import { checkIsValidInputs } from "../validation/checkIsValidInputs.js";
 import { handleErrorPromise } from "../helpers/handleErrorPromise.js";
 
-// const promiseLoader = () => {
-// 	changeButtonType("loader");
-// 	return new Promise((resolve, reject) => {
-// 		setTimeout(() => {
-// 			resolve("Succes");
-// 		}, 2000);
-// 	});
-// };
+const promiseLoader = () => {
+	changeButtonType("loader");
+	return new Promise((resolve, reject) => {
+		setTimeout(() => {
+			resolve("Succes");
+		}, 2000);
+	});
+};
 
 export const addLoader = async callback => {
 	try {
