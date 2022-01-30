@@ -97,11 +97,11 @@ body {
 
 .input {
 	width: 20vw;
-	min-width: 17rem;
+	min-width: 13.5rem;
 	height: 4.5vw;
 	min-height: 3rem;
 	text-align: center;
-	font-size: 2.6rem;
+	font-size: 2.3rem;
 	outline: none;
 }
 .input::placeholder {
@@ -215,6 +215,12 @@ body {
 }
 
 /* Media */
+
+@media (max-width: 690px) {
+	.input {
+		width: 30vw;
+	}
+}
 @media (max-width: 550px) {
 	.inputs-wrapper {
 		flex-direction: column;
